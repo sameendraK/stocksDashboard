@@ -71,6 +71,10 @@ th.mat-sort-header-sorted {
 
 table {
   width: 100%;
+
+  thead {
+    background: #D1E5EC;
+  }
 }
 
 td {
