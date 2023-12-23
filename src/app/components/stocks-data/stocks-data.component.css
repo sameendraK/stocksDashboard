@@ -1,0 +1,113 @@
+.green {
+  background-color: green;
+  /* padding: 1rem; */
+}
+
+.small-green-text {
+  color: darkgreen;
+  font-size: 11px;
+}
+
+.small-red-text {
+  color: red;
+  font-size: 10px;
+}
+
+.red {
+  background-color: red;
+}
+
+.status-badge-container {
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.badge {
+  border-radius: 0.2rem;
+  color: white;
+  padding: 0.1rem 0rem;
+}
+
+.green {
+  background-color: rgb(230, 250, 230);
+  color: green;
+  margin: 5px;
+  /* Increase margin or adjust as needed */
+}
+
+/* Optionally, you can specify a margin for all badges */
+.status-badge-container span {
+  margin-right: 5px;
+  /* Adjust margin between each badge */
+}
+
+.red {
+  background-color: rgb(234, 87, 108);
+}
+
+.font-small {
+  font-size: 8px;
+}
+
+.table-container {
+  height: 90vh;
+  overflow: auto;
+  width: 100%
+}
+
+.paginator-container {
+  height: calc(100% - 90vh);
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  max-width: 1rem;
+}
+
+td.mat-cell {
+  max-width: 200px;
+  /* Adjust the value to your desired maximum width */
+  /* Optionally, you can add other styles as needed */
+}
+
+/* .max-width {
+  max-width: 5rem;
+} */
+
+/* Apply max-width to the cells under the "Symbol" column */
+.max-width {
+  max-width: 30px;
+  text-align: center;
+}
+
+
+/* thead {
+  background: red;
+  color: red;
+  background-color: red;
+} */
+
+th {
+  background-color: gray;
+}
+
+.display-photo {
+  border-radius: 50%;
+  background-color: rgb(216, 235, 255);
+  /* color: red;  */
+}
+
+.tooltip-text {
+  background: red;
+  color: red;
+  background-color: red;
+}
