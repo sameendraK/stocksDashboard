@@ -44,7 +44,7 @@
             <ng-container matColumnDef="todaysRange">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>Today's Range</th>
                 <td mat-cell *matCellDef="let stock">
-                    <app-progress-bar [high]="stock.high"[low]='stock.low'[ltp]='stock.ltp'></app-progress-bar>
+                    <app-progress-bar [item]="stock"></app-progress-bar>
                 </td>
             </ng-container>
             <ng-container matColumnDef="openHighLowSignal">

@@ -1,9 +1,8 @@
 <div class="progress-bar-main-container">
+    <span>{{ item.low }}</span>
     <div class="progress-bar-container">
-        {{high}}
-        <div class="progress-bar">
-            {{ltp}}
+        <div class="progress-bar" [style.width.%]="calculateProgress(item)">
         </div>
-        {{low}}
     </div>
+    <span>{{ item.high }}</span>
 </div>
