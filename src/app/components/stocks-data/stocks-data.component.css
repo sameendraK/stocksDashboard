@@ -37,6 +37,10 @@
   /* Increase margin or adjust as needed */
 }
 
+.round-border {
+  border-radius: 50%
+}
+
 /* Optionally, you can specify a margin for all badges */
 .status-badge-container span {
   margin-right: 5px;
@@ -101,7 +105,7 @@ th {
 }
 
 .display-photo {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   background-color: rgb(216, 235, 255);
   /* color: red;  */
 }

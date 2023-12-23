@@ -27,7 +27,7 @@ export class StocksDataComponent {
   @ViewChild(MatSort)
   sort: MatSort
 
-  displayedColumns: string[] = ['displayPhoto', 'symbol', 'ltp', 'stockMomentumRank', 'sectorTodayRank', 'open', 'openHighLowSignal']
+  displayedColumns: string[] = ['displayPhoto', 'symbol', 'ltp', 'stockMomentumRank', 'open', 'openHighLowSignal']
 
   ngOnInit() {
     this.apiService.get().subscribe((res: any) => {
