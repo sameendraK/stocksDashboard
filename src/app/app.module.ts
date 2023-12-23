@@ -9,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table'
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSort, MatSortHeader, MatSortModule } from '@angular/material/sort';
+import { ProgessBarComponent } from './components/progess-bar/progess-bar.component';
+import { ProgessBarModule } from './components/progess-bar/progess-bar.module';
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { MatSort, MatSortHeader, MatSortModule } from '@angular/material/sort';
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    ProgessBarModule
   ],
   providers: [MatSort, MatSortHeader],
   bootstrap: [AppComponent]

@@ -34,12 +34,18 @@
             <ng-container matColumnDef="stockMomentumRank">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>Momentum</th>
                 <td mat-cell *matCellDef="let stock">
-                  <span class="badge green round-border">{{ stock.stockMomentumRank }}</span>
+                    <span class="badge green round-border">{{ stock.stockMomentumRank }}</span>
                 </td>
-              </ng-container>              
+            </ng-container>
             <ng-container matColumnDef="open">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>Open</th>
                 <td mat-cell *matCellDef="let stock">{{ stock.open }}</td>
+            </ng-container>
+            <ng-container matColumnDef="todaysRange">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Today's Range</th>
+                <td mat-cell *matCellDef="let stock">
+                    <app-progress-bar [high]="stock.high"[low]='stock.low'[ltp]='stock.ltp'></app-progress-bar>
+                </td>
             </ng-container>
             <ng-container matColumnDef="openHighLowSignal">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>OHL</th>

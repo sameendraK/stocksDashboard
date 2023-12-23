@@ -11,7 +11,7 @@ export class ApiService {
   urlPath: string = "https://intradayscreener.com/api/openhighlow/cash";
   constructor(
     private http: HttpClient,
-    private dataStoreService:DataStoreService
+    private dataStoreService: DataStoreService
   ) { }
 
   get(): Observable<any> {
