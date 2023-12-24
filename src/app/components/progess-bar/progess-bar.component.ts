@@ -9,11 +9,6 @@ export class ProgessBarComponent {
 
   @Input()
   item: any;
-  // @Input()
-  high: number;
-  low: number;
-  // @Input()
-  ltp: number;
 
   calculateProgress(item: any): number {
     const high = item.high;
