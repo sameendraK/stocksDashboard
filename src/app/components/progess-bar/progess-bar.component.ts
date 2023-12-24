@@ -19,18 +19,15 @@ export class ProgessBarComponent {
     const high = item.high;
     const low = item.low;
     const ltp = item.ltp;
-  
-    // Check for valid data range
+
     if (high === low) {
-      return 0; // To avoid division by zero and ensure no progress when high and low are the same
+      return 0;
     }
-  
-    // Calculate progress percentage
+
     const progress = ((ltp - low) / (high - low)) * 100;
-  
-    // Ensure progress stays within the range of 0 to 100
+
     return Math.min(100, Math.max(0, progress));
   }
-  
+
 
 }
