@@ -11,6 +11,7 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSort, MatSortHeader, MatSortModule } from '@angular/material/sort';
 import { ProgessBarComponent } from './components/progess-bar/progess-bar.component';
 import { ProgessBarModule } from './components/progess-bar/progess-bar.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ProgessBarModule } from './components/progess-bar/progess-bar.module';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    ProgessBarModule
+    ProgessBarModule,
+    FormsModule
   ],
   providers: [MatSort, MatSortHeader],
   bootstrap: [AppComponent]

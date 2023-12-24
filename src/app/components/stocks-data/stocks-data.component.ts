@@ -27,15 +27,26 @@ export class StocksDataComponent {
   @ViewChild(MatSort)
   sort: MatSort
 
-  displayedColumns: string[] = ['displayPhoto', 'symbol', 'ltp', 'stockMomentumRank', 'open','todaysRange', 'openHighLowSignal']
+  masterCheckBoxSelected: boolean;
+
+  checkBoxChangeHandler() {
+    this.masterCheckBoxSelected = !this.masterCheckBoxSelected;
+    this.stocksData.data.forEach(item => item.isChecked = this.masterCheckBoxSelected)
+  }
+
+  isChecked() {
+    this.masterCheckBoxSelected = this.stocksData.data.every((item) => {
+      return item.checkbox;
+    })
+  }
+
+  displayedColumns: string[] = ['isChecked', 'displayPhoto', 'symbol', 'ltp', 'stockMomentumRank', 'open', 'todaysRange', 'openHighLowSignal']
 
   ngOnInit() {
     this.apiService.get().subscribe((res: any) => {
       this.stocksData.data = res;
       this.dataStoreService.transformAPIResponse(res);
-      this.stockie = res;
     })
-    this.dataStoreService.transformAPIResponse
   }
   ngAfterViewInit() {
     this.stocksData.paginator = this.paginator;
