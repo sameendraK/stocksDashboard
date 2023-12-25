@@ -1,9 +1,13 @@
 # Stock Market website dashboard
 This project is designed with regards to a stock market website's dashboard which contains multiple data regarding the stocks. 
+
 This is built using an HTTP client module for fetching data from an external API that gives the required details.
+
 This project supports pagination, page size, sorting for the columns, angular material icon, and tooltip.
+
 Angular material was used as a library for this.
-Badges are designed based on the conditions that are predefined.
+
+Badges are designed and implemented based on few predefined conditions .
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
 
